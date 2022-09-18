@@ -12,5 +12,7 @@ decr--;
 console.log(incr);
 console.log(decr);
 
-const isChecked = true;
-      isClose = true;
+const isChecked = true,
+      isClose = false;
+
+console.log(isChecked || isClose);
