@@ -1,19 +1,19 @@
-﻿describe("pow", function () {
+﻿const numberOfFilms = +prompt('Сколько фильмов вы уже посмотрели?', '');
 
-  describe("возводит x в степень 3", function () {
+const personalMovieDB = {
+  count: numberOfFilms,
+  movies: {},
+  actors: {},
+  genres: [],
+  privat: false
 
-    function makeTest(x) {
-      let expected = x * x * x;
-      it(`${x} в степени 3 будет ${expected}`, function () {
-        assert.equal(pow(x, 3), expected);
-      });
-    }
+};
 
-    for (let x = 1; x <= 5; x++) {
-      makeTest(x);
-    }
+const a = prompt('Один из последних просмотренных фильмов?', ''),
+      b = prompt('На сколько оцениете его?', ''),
+      c = prompt('Один из последних просмотренных фильмов?', ''),
+      d = prompt('На сколько оцениете его?', '');
 
-  });
-
-  // ... другие тесты. Можно писать и describe, и it блоки.
-});
+personalMovieDB.movies[a] = b;
+personalMovieDB.movies[c]  = d;
+console.log (personalMovieDB);
