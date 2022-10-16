@@ -1,19 +1,25 @@
-﻿const numberOfFilms = +prompt('Сколько фильмов вы уже посмотрели?', '');
+﻿"use strict";
 
-const personalMovieDB = {
-  count: numberOfFilms,
-  movies: {},
-  actors: {},
-  genres: [],
-  privat: false
+const arr = [1, 2, 3, 6, 8];
 
-};
+/* arr[99] = 0;
 
-const a = prompt('Один из последних просмотренных фильмов?', ''),
-      b = prompt('На сколько оцениете его?', ''),
-      c = prompt('Один из последних просмотренных фильмов?', ''),
-      d = prompt('На сколько оцениете его?', '');
+console.log(arr.length);
 
-personalMovieDB.movies[a] = b;
-personalMovieDB.movies[c]  = d;
-console.log (personalMovieDB);
+console.log(arr);
+
+arr.pop();
+
+arr.push(10);
+ */
+arr.forEach(function(item, i, arr) {
+    console.log(`${i} :${item} внутри массива ${arr}`)
+});
+
+for (let i = 0; i < arr.length; i++) {
+    console.log(arr[i]);
+}
+
+for (let value of arr) {
+    console.log(value);
+}
