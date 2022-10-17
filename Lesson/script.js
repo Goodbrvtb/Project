@@ -1,20 +1,31 @@
-﻿"use strict";
+﻿// "use strict";
 
-// console.log(typeof(Number('4')));
+// let number = 5; debugger
 
-// console.log(typeof(+'5'));
+// function logNumber() {
+//     let number = 4; debugger
+//     console.log(number);
+// }
 
-// let answ = +prompt("Hello", "");
+// number = 6; debugger
 
+// logNumber();
 
-let swither = null;
+function createCounter() {
+    let counter = 0;
 
-if (swither) {
-    console.log('Working...');
+    const myFunction = function() { debugger
+        counter = counter +1;debugger
+        return counter; debugger
+    }
+
+    return myFunction;
+
 }
+debugger
+const increment = createCounter();
+const c1 = increment(); debugger
+const c2 = increment(); debugger
+const c3 = increment(); debugger
 
-swither = 1;
-
-if (swither) {
-    console.log('Working...');
-}
+console.log(c1, c2, c3);
